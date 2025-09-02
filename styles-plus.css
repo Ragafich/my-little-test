@@ -1,7 +1,7 @@
 body {
             margin: 0;
             height: 100%;
-            
+            background-size: cover;
             font-weight: 700;
         }
         .rounded-img{
@@ -70,5 +70,43 @@ body {
         }
 
         .auto-text {
-            font-size: larger;
+            width: 100%;
         }
+
+        .image-container {
+  position: relative; /* Контейнер становится "родительским" для позиционируемых элементов */
+  display: inline-block; /* Или block, в зависимости от нужного поведения */
+}
+
+.image-container img {
+  
+  width: 100%; /* Или задайте нужную ширину */
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.snow {
+    background-image: url("img/mlp-logo-1.png");
+    height: 250%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    animation: snowflakes 10s linear infinite;
+}
+
+@keyframes snowflakes {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
