@@ -97,8 +97,8 @@ body {
 }
 
 .snow {
-    background-image: url("img/mlp-logo-1.png");
-    height: 250%;
+    background-image: url("img/snowflake-1.png"), url("img/snowflake-2.png"), url("img/snowflake-3.png");
+    height: 350%;
     left: 0;
     position: absolute;
     top: 0;
