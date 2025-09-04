@@ -73,10 +73,11 @@ body {
             width: 100%;
         }
 
-        .image-container {
-  position: relative; /* Контейнер становится "родительским" для позиционируемых элементов */
-  display: inline-block; /* Или block, в зависимости от нужного поведения */
-}
+        .image-container 
+        {
+            position: relative; /* Контейнер становится "родительским" для позиционируемых элементов */
+            display: inline-block; /* Или block, в зависимости от нужного поведения */
+        }
 
 .image-container img {
   
@@ -104,6 +105,10 @@ body {
     top: 0;
     width: 100%;
     animation: snowflakes 10s linear infinite;
+}
+
+img {
+    border-radius: 40px;
 }
 
 @keyframes snowflakes {
